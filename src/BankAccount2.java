@@ -36,7 +36,7 @@ public class BankAccount2 {
         else{
             bk.getBalance();
         }
-        bk.deposit(1000);
-        bk.getBalance();
+        double balance_1 = bk.deposit(1000);
+        System.out.println("Updated balance is "+ balance_1);
     }
 }

@@ -36,5 +36,7 @@ public class BankAccount2 {
         else{
             bk.getBalance();
         }
+        bk.deposit(1000);
+        bk.getBalance();
     }
 }

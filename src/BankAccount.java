@@ -1,5 +1,3 @@
-import java.awt.image.BandCombineOp;
-
 public class BankAccount {
     double balance;
     String ownerName;

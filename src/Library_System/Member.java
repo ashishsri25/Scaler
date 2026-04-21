@@ -1,8 +1,8 @@
 package Library_System;
 
-public class Member extends User {
+public class Member extends User_Task2 {
     private int borrowedBooksCount;
-    private int MAX_BORROW_LIMIT = 5;
+    private final int MAX_BORROW_LIMIT = 5;
 
     public Member(){
         super();
@@ -20,6 +20,7 @@ public class Member extends User {
 
     @Override
     public boolean canBorrowBooks() {
+
         return borrowedBooksCount < MAX_BORROW_LIMIT;
     }
     @Override
@@ -28,5 +29,13 @@ public class Member extends User {
         System.out.println("Books borrowed are : "+ borrowedBooksCount);
     }
 
+    @Override
+    public void onBorrow(){
+        borrowedBooksCount++;
+    }
+    @Override
+    public void returnBorrow(){
+        borrowedBooksCount--;
+    }
 
 }

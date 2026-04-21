@@ -51,5 +51,7 @@ abstract public class User_Task2 {
     }
 
     abstract public void displayDashboard(); //mentioned only definition.Child class has to implement it. This method is generic for all like user,librarian and member as well.
-    abstract public void canBorrowBooks(); //mentioned only definition.Child class has to implement it. This method is generic for user and member.
+    abstract public boolean canBorrowBooks(); //mentioned only definition.Child class has to implement it. This method is generic for user and member.
+    abstract public void onBorrow();
+    abstract public void returnBorrow();
 }

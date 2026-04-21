@@ -1,6 +1,6 @@
 package Library_System;
 
-public class Librarian extends User {
+public class Librarian extends User_Task2 {
     private String employeeNumber;
 
     public Librarian(String name , String contactInfo , String employeeNumber) {
@@ -18,6 +18,12 @@ public class Librarian extends User {
     public boolean canBorrowBooks() {
         return true;
     }
+
+    @Override
+    public void onBorrow() {}
+
+    @Override
+    public void returnBorrow() {}
 
     public void addNewBook() {
 

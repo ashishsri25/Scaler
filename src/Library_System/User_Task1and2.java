@@ -1,12 +1,12 @@
 package Library_System;
 
-public class User_Task1 {
+public class User_Task1and2 {
     private String userId;
     private String name;
     private String contactInfo;
 
 //    Default Constructor
-    public User_Task1() {
+    public User_Task1and2() {
 
         this.userId = generateUniqueId();
     }
@@ -16,13 +16,13 @@ public class User_Task1 {
         return "0";
     }
 
-    public User_Task1(String name, String contactInfo) {
-//        this.userId = generateUniqueId();
+    public User_Task1and2(String name, String contactInfo) {
+        this.userId = generateUniqueId();
         this.name = name;
         this.contactInfo = contactInfo;
     }
 
-    public User_Task1(User_Task1 other) {
+    public User_Task1and2(User_Task1and2 other) {
         this.userId = other.userId;
         this.name = other.name;
         this.contactInfo = other.contactInfo;
